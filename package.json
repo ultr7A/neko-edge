@@ -4,7 +4,8 @@
   "description": "optic adventure battle",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack serve --mode development --hot",
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
@@ -17,13 +18,14 @@
     "game",
     "thing"
   ],
-  "author": "J. R. Evans",
+  "author": "J. Evans",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/ultr7A/neko-edge/issues"
   },
   "homepage": "https://github.com/ultr7A/neko-edge#readme",
   "devDependencies": {
+    "ts-loader": "^9.5.1",
     "webpack": "^5.89.0",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1"
